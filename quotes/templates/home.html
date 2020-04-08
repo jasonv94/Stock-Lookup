@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Quote:</h1>
+
+{% if ticker %}
+  {{ticker}}
+{% endif %}
+{% if api %}
+	{% if api == "Error"%}
+    Error
+	{% else %}
+
+	<h1>{{api.companyName}}</h1>
+	<h3>Price:{{api.latestPrice}}</h3>
+	<h3>Exchange:{{api.primaryExchange}}</h3>
+	<h3>Previous Close:{{api.previousClose}}</h3>
+	<h3>Market Cap:{{api.marketCap}}</h3>
+	<h3>52 week High:{{api.week52High}}</h3>
+	<h3>52 week Low:{{api.week52Low}}</h3>
+	<h3>P/E:{{api.peRatio}}</h3>
+
+		{% endif %}
+{% endif %}
+
+
+{% endblock %}
