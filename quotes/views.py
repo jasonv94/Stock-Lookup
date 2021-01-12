@@ -15,7 +15,7 @@ def home(request):
         return render(request,'home.html',{'api':api})
 
     else:
-        return render(request,'home.html',{'ticker':"Enter Proper"})
+        return render(request,'home.html',{'ticker':"Enter Proper Ticker"})
 
 
 
