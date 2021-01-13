@@ -7,4 +7,4 @@ Project is web based application that can look up information about stocks in th
 Lookup is based on symbol(ticker) for each company.
 
 
-![Screenshot](stockproject.png)
+![Screenshot](StockProject.png)
