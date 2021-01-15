@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Stock
+
+#use for homepage send requests to API and retrieve successful API Call
 def home(request):
     import requests
     import json
@@ -22,6 +24,4 @@ def home(request):
 def about(request):
     return render(request,'about.html',{})
 
-def add_stock(request):
-    ticker = Stock.objects.all()
-    return render(request,'add_stock.html',{'ticker':ticker})
+
